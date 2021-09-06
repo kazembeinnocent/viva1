@@ -10,29 +10,23 @@
     tools:openDrawer="start"
     android:layout_height="match_parent"
     tools:context=".NavDrawer">
+
     <include
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/app_bar"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/app_bar"
+        />
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
         android:background="#0E66B9"
         android:layout_gravity="start"
-        app:menu="@menu/menu"
         app:headerLayout="@layout/nav_header"
-        app:itemBackground="@drawable/menu_item_padding"
+        app:menu="@menu/menu"
         app:itemIconTint="#fff"
         app:itemTextAppearance="@style/TextViewStyle"
         app:itemHorizontalPadding="40dp"
         />
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/fragment_container"/>
-
-
-
 
 </androidx.drawerlayout.widget.DrawerLayout>
